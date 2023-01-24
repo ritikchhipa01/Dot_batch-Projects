@@ -1,0 +1,34 @@
+.container{
+    background-color: navajowhite;
+    bottom: 1px solid red;
+    height: 700px;
+    display: grid;
+
+    gap: 4px;
+    grid-template-columns: repeat();
+    grid-template-rows: 100px 500px 100px ;
+    grid-template-areas: 
+    "hd hd"
+    "side main"
+    "Ft Ft"
+    ;
+
+}
+
+.box{
+    background-color: aqua;
+    border: 1px solid green;
+}
+
+#Header{
+    grid-area: hd;
+}
+#Sidebar{
+    grid-area: side;
+}
+#Content{
+    grid-area: main;
+}
+#Footer{
+    grid-area: Ft;
+}
